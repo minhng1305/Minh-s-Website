@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Minh Nguyen<noscript></noscript></title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body onload="alert('WHAAAASSUPPPPPP!!!!')">
+        <!-- Header: represents a container for introductory content or a set of navigational links -->
+        <header>
+            <div class="container cont-Nav">
+                <!-- This one contains the entire bar -->
+                <div class="row">
+                    <!-- This one contains the name section -->
+                    <div class="name col-md-3"><h1 class="d-none d-sm-block">Minh Nguyễn</h1></div>
+                    <!-- This contains the navigator bar -->
+                    <div class="cont-Nav col-md-9">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <button class="btn">
+                                        <a href="#section1"> <!-- clicking here will go to "About" section down below -->
+                                            <p>About</p>
+                                            <!-- <i class=""></i> -->
+                                        </a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn">
+                                        <a href="#section2"> <!-- clicking here will go to "Contact" section down below -->
+                                            <p>Contact</p>
+                                            <!-- <i class=""></i> -->
+                                        </a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn">
+                                        <a href="#section3"> <!-- clicking here will go to "Gallery" section down below -->
+                                            <p>Gallary</p> 
+                                            <!-- <i class=""></i> -->
+                                        </a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn">
+                                        <a href="#section4"> <!-- clicking here will go to "Resume" section down below -->
+                                            <p>Resume</p>
+                                            <!-- <i class=""></i> -->
+                                        </a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn">
+                                        <a href="#section5"> <!-- clicking here will go to "Resume" section down below -->
+                                            <p>HighLight</p>
+                                            <!-- <i class=""></i> -->
+                                        </a>
+                                    </button>
+                                </li>
+                            </ul> 
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="progress" style="position: relative;">
+            <!-- For the progress bar that shows where we at in the page -->
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <!-- The Main part contains the main info of the page -->
+        <main>
+            <!-- This contains the body part with many sections -->
+            <div id="body" class="container contMain textStart">
+                <!-- "About" section -->
+                <section id="section1" class="About">
+                    <h2>About</h2>
+                    <div class="col-md-8">
+                        <!-- This part will be shown in default -->
+                        <p class="short-into">
+                            This is Minh Nguyen,  a dynamic individual who proudly hails from the bustling 
+                            city of Hanoi, Vietnam. Growing up in a vibrant cultural milieu, Minh was exposed to a rich 
+                            tapestry of traditions, flavors, and experiences that shaped his worldview. Now, as a 
+                            second-year student at the Chinese University of Hong Kong, Minh continues to embrace new 
+                            horizons, both in his academic pursuits and his personal passions.
+                        </p>
+                        <!-- This part will only be shown by clicking the "Read More" button -->
+                        <p class="full-intro show-content" id="hidden-content" style="display:none"> <!-- will change to "display:block" when "Read More" is clicked -->
+                            While Minh's studies in Financial Technology play a significant role in his life, there is 
+                            much more to him than just numbers and algorithms. One of his greatest passions lies in the 
+                            world of mixed martial arts, specifically Jiu Jitsu. From the moment he stepped onto the mat, 
+                            Minh discovered an incredible sense of discipline, resilience, and personal growth through 
+                            this ancient martial art. Jiu Jitsu has not only become a physical outlet for him but also a 
+                            means of connecting with a diverse community of practitioners who share his zest for self-improvement.
+                        </p>
+                        <a href="#" id="read-more">Read More</a> <!-- will change the content to "Read Less" when clicked -->
+                    </div>
+                    <div class="col-md-4">
+                        <!-- <h3>Image</h3> -->
+                        <img class="about-pic" src="./Image/introPic_MinhNg.JPG" alt="Hottest Man Alive">
+                    </div>
+                </section>
+                <!-- "Contact" section -->
+                <section id="section2" class="Contact">
+                    <h2>Contact</h2>
+                    <p>Email:</p>
+                    <ul>
+                        <li> Personal: <a href="">baminh8a1@gmail.com</a> </li>
+                        <li> University: <a href="">1155184240@link.cuhk.edu.hk</a> </li>
+                    </ul>
+                    <p>Phone:</p>
+                    <ul>
+                        <li> Vietnam: <a href="">+84 862262072</a> </li>
+                        <li> Hong Kong: <a href="">+852 96370171</a> </li>
+                    </ul>
+                </section>
+                <!-- "Gallery" section -->
+                <section id="section3" class="Gallery">
+                    <h2>Minh Nguyen's Gallery</h2>
+                    <button id="show-image-button" class="btn btn-primary">Show Images</button> <!-- will change to "Hide Images" when clicked -->
+                    <div id="image-container" class="container contMain textStart" style="display:none"> <!-- will change to "display:block" when button is clicked -->
+                        <div class="row"> <!-- Contain all the image in 1 big block -->
+                            <div class="col-md-4"> <img src="./Image/pic3.JPG" alt="Handsome"> </div> <!--Contain the 1st pic-->
+                            <div class="col-md-4"> <img src="./Image/pic2.jpeg" alt="Handsome"> </div> <!--Contain the 2nd pic-->
+                            <div class="col-md-4"> <img src="./Image/pic1.JPG" alt="Handsome"> </div> <!--Contain the 3rd pic-->
+                            <div class="col-md-4"> <img src="./Image/pic4.jpeg" alt="Handsome"> </div> <!--Contain the 4th pic-->
+                            <div class="col-md-4"> <img src="./Image/pic5.jpg" alt="Handsome"> </div> <!--Contain the 5th pic-->
+                        </div>
+                    </div>
+                </section>
+                <!-- "Resume" section -->
+                <section id="section4" class="Resume">
+                    <h2>Resume</h2>
+                    <p>Click <a href="https://minhng1305.github.io/MinhNguyen_Resume/" target="_blank">here</a> to go to Minh Nguyen's CV Webpage</p>
+                </section>  
+                
+                <section id="section5" class="HighLight">
+                    <h2>HighLight</h2>
+                    <div class="container contMain textStart col-md-6">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Event</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+                                <tr>
+                                    <td>2004</td>
+                                    <td>Vietnamese Jesus was born.</td>
+                                </tr>
+                                <tr>
+                                    <td>2017</td>
+                                    <td>Ngoi Sao Ha Noi</td>
+                                </tr>
+                                <tr>
+                                    <td>2019</td>
+                                    <td>Nguyen Hue HighSchool</td>
+                                </tr>
+                                <tr>
+                                    <td>2023</td>
+                                    <td>CUHK</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>              
+            </div>
+            <aside id="social-media-icons" class="hidden-icons">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/ba-minh-nguyen-03b6a7229/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ba-minh-nguyen-03b6a7229/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/minhng1305?tab=overview&from=2024-01-01&to=2024-01-17" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- The "Toggle Button" -->
+                <!-- <div class="toggleButton">
+                    <i class="fas fa-user">::before</i>
+                </div> -->
+            </aside>
+            <!-- This part contains the Scroll Top Button -->
+            <div id="scrollTopButton" style="display:none;"> <!-- This will be changed to "display:flex;" as scrolling down -->
+                <i class="fas fa-arrow-up">::before</i>
+            </div>
+        </main>
+        <!-- Footer Section -->
+        <footer>
+            <p>
+                Posted by NGUYEN, Ba Minh <br />
+                Contact info: baminh8a1@gmail.com <br />
+                Credit: Saleh (iamsaleh.furqan@gmail.com)
+            </p>
+        </footer>
+        <!-- includes the jQuery library from a remote source -->
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- includes the Bootstrap JavaScript library from a remote source -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- from the "app.js" file -->
+        <script src="./app.js"></script>
+    </body>
+</html>
